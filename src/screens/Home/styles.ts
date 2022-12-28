@@ -59,11 +59,6 @@ export const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
-  listEmptyTextAndClipboardContainer: {
-    width: 327,
-    alignItems: "center",
-    justifyContent: "center",
-  },
 
   listEmptyText: {
     marginTop: 16,

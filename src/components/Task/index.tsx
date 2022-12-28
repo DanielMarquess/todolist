@@ -1,8 +1,8 @@
 import { View, Text, TouchableOpacity } from "react-native";
 import { styles } from "./styles";
 import { EvilIcons } from "@expo/vector-icons";
-import Checkbox from "expo-checkbox";
 import { useState } from "react";
+import MyCheckbox from "../iconComponents/checkbox";
 
 type Props = {
   name: string;
@@ -15,15 +15,16 @@ export function Task({ name, onRemove, onTaskCheck }: Props) {
 
   return (
     <View style={styles.container}>
-      <Checkbox
-        color={checked ? "#5E60CE" : "#4EA8DE"}
-        style={styles.checkBox}
-        value={checked}
-        onValueChange={(e) => {
+      <MyCheckbox
+        onChange={() => {
+          setChecked(!checked);
           onTaskCheck();
-          setChecked(e);
         }}
+        checked={checked}
+        buttonStyle={styles.checkboxBase}
+        activeButtonStyle={styles.checkboxChecked}
       />
+
       <Text style={checked ? styles.lineThroughName : styles.name}>{name}</Text>
       <TouchableOpacity style={styles.trashButton} onPress={onRemove}>
         <EvilIcons name="trash" size={24} color="#808080" />

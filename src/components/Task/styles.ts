@@ -23,9 +23,6 @@ export const styles = StyleSheet.create({
     height: 32,
     color: "#808080",
   },
-  checkBox: {
-    marginLeft: 12,
-  },
   lineThroughName: {
     marginHorizontal: 8,
     marginVertical: 12,
@@ -34,5 +31,19 @@ export const styles = StyleSheet.create({
     height: 19.6,
     color: "#808080",
     textDecorationLine: "line-through",
+  },
+  checkboxBase: {
+    width: 24,
+    height: 24,
+    justifyContent: "center",
+    alignItems: "center",
+    borderRadius: 999,
+    borderWidth: 2,
+    borderColor: "#4EA8DE",
+    marginLeft: 12,
+  },
+  checkboxChecked: {
+    backgroundColor: "#5E60CE",
+    borderColor: "#5E60CE",
   },
 });

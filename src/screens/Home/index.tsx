@@ -40,7 +40,6 @@ export default function Home() {
 
   function handleTaskAdd() {
     if (tasks === undefined || tasks.length == 0) {
-      setCompletedTasks(0);
       setTasks([{ name: taskName, checked: false }]);
       setTaskName("");
       return;
@@ -70,10 +69,6 @@ export default function Home() {
         }
       }
     });
-  }
-
-  function isChecked(task: boolean) {
-    return task === true;
   }
 
   return (
