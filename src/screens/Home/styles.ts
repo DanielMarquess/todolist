@@ -7,12 +7,9 @@ export const styles = StyleSheet.create({
     padding: 24,
     paddingTop: 70,
   },
-  todoLogo: {
-    marginLeft: 100,
-    marginRight: 132.66,
-  },
   textInput: {
     backgroundColor: "#262626",
+    color: "#FFF",
     height: 54,
     borderRadius: 6,
     padding: 16,
@@ -38,15 +35,16 @@ export const styles = StyleSheet.create({
   resumeContainer: {
     flexDirection: "row",
     justifyContent: "space-between",
+    marginBottom: 68,
   },
-  createdAndConcludedText: {
+  createdAndCompletedText: {
     color: "#4EA8DE",
     marginRight: 8,
   },
   counterText: {
     color: "#fff",
   },
-  createdAndConcludedContainer: {
+  createdAndCompletedContainer: {
     flexDirection: "row",
   },
   counterTextContainer: {
@@ -55,5 +53,30 @@ export const styles = StyleSheet.create({
     paddingHorizontal: 8,
     paddingVertical: 2,
     borderRadius: 8,
+  },
+  listEmptyContainer: {
+    width: 320,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  listEmptyTextAndClipboardContainer: {
+    width: 327,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+
+  listEmptyText: {
+    marginTop: 16,
+    width: 287,
+    fontWeight: "bold",
+    color: "#808080",
+    fontSize: 14,
+    textAlign: "center",
+  },
+  listEmptySubtext: {
+    width: 287,
+    color: "#808080",
+    fontSize: 14,
+    textAlign: "center",
   },
 });
